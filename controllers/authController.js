@@ -1,36 +1,74 @@
 import { verifyWebhook } from "@clerk/express/webhooks";
 import { User } from "../models/User.js";
 import connectDB from "../connectDB.js";
+import { Webhook } from "svix";
 export const createUser = async (req, res) => {
   try {
-    const evt = await verifyWebhook(req);
+    const whook = new Webhook(process.env.CLERK_WEBHOOK_SIGNING_SECRET);
+
+    await whook.verify(JSON.stringify(req.body), {
+      "svix-id": req.headers["svix-id"],
+      "svix-timestamp": req.headers["svix-timestamp"],
+      "svix-signature": req.headers["svix-signature"],
+    });
+    // Getting data from request body
+    const { data, type } = req.body;
+
+    // const evt = await verifyWebhook(req);
 
     // Do something with payload
     // For this guide, log payload to console
-    const { id } = evt.data;
-    const eventType = evt.type;
+    // const { id } = evt.data;
+    // const eventType = evt.type;
     await connectDB();
-    switch (eventType) {
-      case "user.created":
-        const clerkUser = evt.data;
-        const newUser = new User({
-          clerkUserId: clerkUser.username || clerkUser.first_name,
-          email: clerkUser.email_addresses[0].email_address,
-          profilePicture: clerkUser.profile_image_url,
-        });
-        await newUser.save();
-        break;
+    switch (type) {
+      // case "user.created":
+      //   const clerkUser = evt.data;
+      //   const newUser = new User({
+      //     clerkUserId: clerkUser.username || clerkUser.first_name,
+      //     email: clerkUser.email_addresses[0].email_address,
+      //     profilePicture: clerkUser.profile_image_url,
+      //   });
+      //   await newUser.save();
+      //   break;
 
-      case "user.deleted":
-        await User.findOneAndDelete({
-          email: evt.data.email_addresses[0].email_address,
-        });
+      // case "user.deleted":
+      //   await User.findOneAndDelete({
+      //     email: evt.data.email_addresses[0].email_address,
+      //   });
+      //   break;
+      case "user.created": {
+        const userData = {
+          clerkUserId: data.id,
+          email: data.email_addresses[0].email_address,
+          profilePicture: data.image_url,
+        };
+        await User.create(userData);
+        res.json({});
         break;
+      }
+      case "user.updated": {
+        const userData = {
+          email: data.email_addresses[0].email_address,
+          profilePicture: data.image_url,
+        };
+        await User.findByIdAndUpdate(data.id, userData);
+        res.json({});
+        break;
+      }
+      case "user.deleted": {
+        await User.findByIdAndDelete(data.id);
+        res.json({});
+        break;
+      }
+      default: {
+        break;
+      }
     }
 
-    res.status(200).send("Webhook processed");
+    // res.status(200).send("Webhook processed");
   } catch (err) {
-    console.error("Error verifying webhook:", err);
+    console.log("Error verifying webhook:", err);
     return res.status(400).send("Error verifying webhook");
   }
 };

@@ -13,6 +13,7 @@ const allowedOrigins = [
 const app = express();
 
 //
+app.use("/api/v1/auth/webhooks", express.raw({ type: "application/json" }));
 app.use(express.json());
 app.use(clerkMiddleware());
 app.use(
