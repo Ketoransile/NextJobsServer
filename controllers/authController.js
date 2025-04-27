@@ -18,15 +18,21 @@ export const createUser = async (req, res) => {
   try {
     const { headers, body } = req;
 
+    // Manually parse the raw body (Buffer) to JSON
+    const parsedBody = JSON.parse(body.toString());
+
     console.log("👉 Headers received:", JSON.stringify(headers, null, 2));
-    console.log("👉 Body received:", JSON.stringify(body, null, 2));
+    console.log(
+      "👉 Body received (parsed):",
+      JSON.stringify(parsedBody, null, 2)
+    );
 
     // 1. Create Webhook instance
     const whook = new Webhook(process.env.CLERK_WEBHOOK_SIGNING_SECRET);
     console.log("🔐 Verifying webhook...");
 
     // 2. Verify Signature
-    await whook.verify(JSON.stringify(body), {
+    await whook.verify(JSON.stringify(parsedBody), {
       "svix-id": headers["svix-id"],
       "svix-timestamp": headers["svix-timestamp"],
       "svix-signature": headers["svix-signature"],
@@ -34,7 +40,7 @@ export const createUser = async (req, res) => {
 
     console.log("✅ Webhook verified successfully!");
 
-    const { data, type } = body;
+    const { data, type } = parsedBody;
 
     console.log(`📦 Event type: ${type}`);
     console.log(`📦 Event data:`, JSON.stringify(data, null, 2));
