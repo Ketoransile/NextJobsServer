@@ -13,7 +13,11 @@ const allowedOrigins = [
 const app = express();
 
 //
-app.use("/api/v1/auth/webhooks", express.raw({ type: "application/json" }));
+app.use(
+  "/api/v1/auth/webhooks",
+  express.raw({ type: "application/json" }),
+  authRoutes
+);
 app.use(express.json());
 app.use(clerkMiddleware());
 app.use(
@@ -25,7 +29,7 @@ app.use(
 
 // Routes
 app.use("/api/v1/users", requireAuth(), userRoutes);
-app.use("/api/v1/auth", authRoutes);
+// app.use("/api/v1/auth", authRoutes);
 
 console.log("process.env.PORT", process.env.PORT);
 console.log("process.env.MONGODB_URL", process.env.MONGODB_URL);
