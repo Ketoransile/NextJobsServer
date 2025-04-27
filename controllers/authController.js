@@ -7,7 +7,11 @@
 //     const whook = new Webhook(process.env.CLERK_WEBHOOK_SIGNING_SECRET);
 
 import { Webhook } from "svix";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
+import dotenv from "dotenv";
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
 //     await whook.verify(JSON.stringify(req.body), {
 //       "svix-id": req.headers["svix-id"],
 //       "svix-timestamp": req.headers["svix-timestamp"],
