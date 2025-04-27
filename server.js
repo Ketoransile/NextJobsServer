@@ -3,6 +3,7 @@ dotenv.config();
 import { clerkMiddleware, getAuth, requireAuth } from "@clerk/express";
 import express from "express";
 import cors from "cors";
+import authRoutes from "./routes/authRoute.js";
 import userRoutes from "./routes/userRoute.js";
 import { authenticateUser } from "./middlewares/authenticateUser.js";
 const allowedOrigins = [
@@ -23,6 +24,7 @@ app.use(
 
 // Routes
 app.use("/api/v1/users", requireAuth(), userRoutes);
+app.use("/api/v1/auth", authRoutes);
 
 console.log("process.env.PORT", process.env.PORT);
 console.log("process.env.MONGODB_URL", process.env.MONGODB_URL);
