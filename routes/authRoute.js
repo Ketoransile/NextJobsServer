@@ -9,5 +9,5 @@ import { createUser } from "../controllers/authController.js";
 
 const router = express.Router();
 
-app.post("/webhooks", express.raw({ type: "application/json" }), createUser);
+router.post("/webhooks", express.raw({ type: "application/json" }), createUser);
 export default router;
