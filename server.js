@@ -4,6 +4,7 @@ import { clerkMiddleware, getAuth, requireAuth } from "@clerk/express";
 import express from "express";
 import cors from "cors";
 import authRoutes from "./routes/authRoute.js";
+import jobRoutes from "./routes/jobsRoute.js";
 import userRoutes from "./routes/userRoute.js";
 import { authenticateUser } from "./middlewares/authenticateUser.js";
 const allowedOrigins = [
@@ -25,6 +26,7 @@ app.use(
 
 // Routes
 app.use("/api/v1/users", requireAuth(), userRoutes);
+app.use("/api/v1/jobs", jobRoutes);
 // app.use("/api/v1/auth", authRoutes);
 
 console.log("process.env.PORT", process.env.PORT);

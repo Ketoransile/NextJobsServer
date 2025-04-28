@@ -5,8 +5,7 @@ export const jobListings = [
     location: "London",
     level: "Entry Level",
     ctc: "CTC: 85k",
-    apply_label: "Apply Now",
-    posted: "Posted 0 months ago",
+    applyLabel: "Apply Now",
     description:
       "As an AI/ML Engineer, you'll innovate on intelligent systems, build learning algorithms, and apply ML models to real-world challenges.",
     responsibilities: [
@@ -24,6 +23,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "UX Designer",
@@ -31,8 +31,7 @@ export const jobListings = [
     location: "Mumbai",
     level: "Senior Level",
     ctc: "CTC: 75k",
-    apply_label: "Apply Now",
-    posted: "Posted 4 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -50,6 +49,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "designing",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "DevOps Engineer",
@@ -57,8 +57,7 @@ export const jobListings = [
     location: "California",
     level: "Senior Level",
     ctc: "CTC: 95k",
-    apply_label: "Apply Now",
-    posted: "Posted 6 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -76,6 +75,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Cloud Engineer",
@@ -83,8 +83,7 @@ export const jobListings = [
     location: "Bangalore",
     level: "Entry Level",
     ctc: "CTC: 85k",
-    apply_label: "Apply Now",
-    posted: "Posted 4 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -102,6 +101,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "UX Designer",
@@ -109,8 +109,7 @@ export const jobListings = [
     location: "New York",
     level: "Intermediate Level",
     ctc: "CTC: 120k",
-    apply_label: "Apply Now",
-    posted: "Posted 9 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -128,6 +127,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "designing",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Product Manager",
@@ -135,8 +135,7 @@ export const jobListings = [
     location: "Austin",
     level: "Senior Level",
     ctc: "CTC: 75k",
-    apply_label: "Apply Now",
-    posted: "Posted 11 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -154,6 +153,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "management",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Data Analyst",
@@ -161,8 +161,7 @@ export const jobListings = [
     location: "London",
     level: "Senior Level",
     ctc: "CTC: 75k",
-    apply_label: "Apply Now",
-    posted: "Posted 2 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Data Analyst, you will interpret complex data sets, provide actionable insights, and support data-driven decision-making.",
     responsibilities: [
@@ -180,6 +179,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "dataScience",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Backend Developer",
@@ -187,8 +187,7 @@ export const jobListings = [
     location: "Austin",
     level: "Senior Level",
     ctc: "CTC: 102k",
-    apply_label: "Apply Now",
-    posted: "Posted 7 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Backend Developer, you'll develop scalable server-side applications, manage APIs, and work closely with frontend and DevOps teams.",
     responsibilities: [
@@ -206,6 +205,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Product Manager",
@@ -213,8 +213,7 @@ export const jobListings = [
     location: "Washington",
     level: "Intermediate Level",
     ctc: "CTC: 95k",
-    apply_label: "Apply Now",
-    posted: "Posted 7 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -232,6 +231,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "management",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "AI/ML Engineer",
@@ -239,8 +239,7 @@ export const jobListings = [
     location: "Bangalore",
     level: "Intermediate Level",
     ctc: "CTC: 95k",
-    apply_label: "Apply Now",
-    posted: "Posted 9 months ago",
+    applyLabel: "Apply Now",
     description:
       "As an AI/ML Engineer, you'll innovate on intelligent systems, build learning algorithms, and apply ML models to real-world challenges.",
     responsibilities: [
@@ -258,6 +257,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Product Manager",
@@ -265,8 +265,7 @@ export const jobListings = [
     location: "New York",
     level: "Senior Level",
     ctc: "CTC: 110k",
-    apply_label: "Apply Now",
-    posted: "Posted 4 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -284,6 +283,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "management",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Product Manager",
@@ -291,8 +291,7 @@ export const jobListings = [
     location: "London",
     level: "Entry Level",
     ctc: "CTC: 95k",
-    apply_label: "Apply Now",
-    posted: "Posted 9 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -310,6 +309,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "management",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "AI/ML Engineer",
@@ -317,8 +317,7 @@ export const jobListings = [
     location: "Chennai",
     level: "Intermediate Level",
     ctc: "CTC: 85k",
-    apply_label: "Apply Now",
-    posted: "Posted 3 months ago",
+    applyLabel: "Apply Now",
     description:
       "As an AI/ML Engineer, you'll innovate on intelligent systems, build learning algorithms, and apply ML models to real-world challenges.",
     responsibilities: [
@@ -336,6 +335,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Frontend Developer",
@@ -343,8 +343,7 @@ export const jobListings = [
     location: "Mumbai",
     level: "Intermediate Level",
     ctc: "CTC: 95k",
-    apply_label: "Apply Now",
-    posted: "Posted 11 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Frontend Developer, you will design interactive interfaces, optimize performance, and bring creative ideas to life using modern web technologies.",
     responsibilities: [
@@ -362,6 +361,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Data Analyst",
@@ -369,8 +369,7 @@ export const jobListings = [
     location: "London",
     level: "Senior Level",
     ctc: "CTC: 75k",
-    apply_label: "Apply Now",
-    posted: "Posted 6 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Data Analyst, you will interpret complex data sets, provide actionable insights, and support data-driven decision-making.",
     responsibilities: [
@@ -388,6 +387,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "dataScience",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Product Manager",
@@ -395,8 +395,7 @@ export const jobListings = [
     location: "Chennai",
     level: "Intermediate Level",
     ctc: "CTC: 95k",
-    apply_label: "Apply Now",
-    posted: "Posted 7 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -414,6 +413,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "management",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "UX Designer",
@@ -421,8 +421,7 @@ export const jobListings = [
     location: "Bangalore",
     level: "Entry Level",
     ctc: "CTC: 110k",
-    apply_label: "Apply Now",
-    posted: "Posted 9 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -440,6 +439,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "designing",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "AI/ML Engineer",
@@ -447,8 +447,7 @@ export const jobListings = [
     location: "Washington",
     level: "Entry Level",
     ctc: "CTC: 130k",
-    apply_label: "Apply Now",
-    posted: "Posted 0 months ago",
+    applyLabel: "Apply Now",
     description:
       "As an AI/ML Engineer, you'll innovate on intelligent systems, build learning algorithms, and apply ML models to real-world challenges.",
     responsibilities: [
@@ -466,6 +465,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Product Manager",
@@ -473,8 +473,7 @@ export const jobListings = [
     location: "Toronto",
     level: "Senior Level",
     ctc: "CTC: 102k",
-    apply_label: "Apply Now",
-    posted: "Posted 3 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -492,6 +491,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "management",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Product Manager",
@@ -499,8 +499,7 @@ export const jobListings = [
     location: "California",
     level: "Senior Level",
     ctc: "CTC: 120k",
-    apply_label: "Apply Now",
-    posted: "Posted 1 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -518,6 +517,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "management",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Data Analyst",
@@ -525,8 +525,7 @@ export const jobListings = [
     location: "Chennai",
     level: "Entry Level",
     ctc: "CTC: 75k",
-    apply_label: "Apply Now",
-    posted: "Posted 7 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Data Analyst, you will interpret complex data sets, provide actionable insights, and support data-driven decision-making.",
     responsibilities: [
@@ -544,6 +543,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "dataScience",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Frontend Developer",
@@ -551,8 +551,7 @@ export const jobListings = [
     location: "Bangalore",
     level: "Senior Level",
     ctc: "CTC: 102k",
-    apply_label: "Apply Now",
-    posted: "Posted 0 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Frontend Developer, you will design interactive interfaces, optimize performance, and bring creative ideas to life using modern web technologies.",
     responsibilities: [
@@ -570,6 +569,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Software Tester",
@@ -577,8 +577,7 @@ export const jobListings = [
     location: "California",
     level: "Entry Level",
     ctc: "CTC: 85k",
-    apply_label: "Apply Now",
-    posted: "Posted 3 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -596,6 +595,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Product Manager",
@@ -603,8 +603,7 @@ export const jobListings = [
     location: "Toronto",
     level: "Senior Level",
     ctc: "CTC: 120k",
-    apply_label: "Apply Now",
-    posted: "Posted 3 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -622,6 +621,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "management",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Frontend Developer",
@@ -629,8 +629,7 @@ export const jobListings = [
     location: "Austin",
     level: "Intermediate Level",
     ctc: "CTC: 75k",
-    apply_label: "Apply Now",
-    posted: "Posted 10 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Frontend Developer, you will design interactive interfaces, optimize performance, and bring creative ideas to life using modern web technologies.",
     responsibilities: [
@@ -648,6 +647,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "AI/ML Engineer",
@@ -655,8 +655,7 @@ export const jobListings = [
     location: "Mumbai",
     level: "Senior Level",
     ctc: "CTC: 102k",
-    apply_label: "Apply Now",
-    posted: "Posted 1 months ago",
+    applyLabel: "Apply Now",
     description:
       "As an AI/ML Engineer, you'll innovate on intelligent systems, build learning algorithms, and apply ML models to real-world challenges.",
     responsibilities: [
@@ -674,6 +673,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Cloud Engineer",
@@ -681,8 +681,7 @@ export const jobListings = [
     location: "Austin",
     level: "Entry Level",
     ctc: "CTC: 85k",
-    apply_label: "Apply Now",
-    posted: "Posted 0 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -700,6 +699,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Cloud Engineer",
@@ -707,8 +707,7 @@ export const jobListings = [
     location: "Toronto",
     level: "Intermediate Level",
     ctc: "CTC: 120k",
-    apply_label: "Apply Now",
-    posted: "Posted 8 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -726,6 +725,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Software Tester",
@@ -733,8 +733,7 @@ export const jobListings = [
     location: "Washington",
     level: "Senior Level",
     ctc: "CTC: 102k",
-    apply_label: "Apply Now",
-    posted: "Posted 0 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -752,6 +751,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "AI/ML Engineer",
@@ -759,8 +759,7 @@ export const jobListings = [
     location: "California",
     level: "Intermediate Level",
     ctc: "CTC: 95k",
-    apply_label: "Apply Now",
-    posted: "Posted 7 months ago",
+    applyLabel: "Apply Now",
     description:
       "As an AI/ML Engineer, you'll innovate on intelligent systems, build learning algorithms, and apply ML models to real-world challenges.",
     responsibilities: [
@@ -778,6 +777,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Backend Developer",
@@ -785,8 +785,7 @@ export const jobListings = [
     location: "New York",
     level: "Entry Level",
     ctc: "CTC: 110k",
-    apply_label: "Apply Now",
-    posted: "Posted 3 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Backend Developer, you'll develop scalable server-side applications, manage APIs, and work closely with frontend and DevOps teams.",
     responsibilities: [
@@ -804,6 +803,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Data Analyst",
@@ -811,8 +811,7 @@ export const jobListings = [
     location: "California",
     level: "Entry Level",
     ctc: "CTC: 102k",
-    apply_label: "Apply Now",
-    posted: "Posted 6 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Data Analyst, you will interpret complex data sets, provide actionable insights, and support data-driven decision-making.",
     responsibilities: [
@@ -830,6 +829,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "dataScience",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Data Analyst",
@@ -837,8 +837,7 @@ export const jobListings = [
     location: "Toronto",
     level: "Senior Level",
     ctc: "CTC: 85k",
-    apply_label: "Apply Now",
-    posted: "Posted 9 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Data Analyst, you will interpret complex data sets, provide actionable insights, and support data-driven decision-making.",
     responsibilities: [
@@ -856,6 +855,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "dataScience",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Cloud Engineer",
@@ -863,8 +863,7 @@ export const jobListings = [
     location: "Chennai",
     level: "Entry Level",
     ctc: "CTC: 110k",
-    apply_label: "Apply Now",
-    posted: "Posted 1 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -882,6 +881,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Software Tester",
@@ -889,8 +889,7 @@ export const jobListings = [
     location: "Washington",
     level: "Entry Level",
     ctc: "CTC: 110k",
-    apply_label: "Apply Now",
-    posted: "Posted 6 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -908,6 +907,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "UX Designer",
@@ -915,8 +915,7 @@ export const jobListings = [
     location: "New York",
     level: "Entry Level",
     ctc: "CTC: 130k",
-    apply_label: "Apply Now",
-    posted: "Posted 1 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -934,6 +933,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "designing",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Data Analyst",
@@ -941,8 +941,7 @@ export const jobListings = [
     location: "Hyderabad",
     level: "Senior Level",
     ctc: "CTC: 95k",
-    apply_label: "Apply Now",
-    posted: "Posted 7 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Data Analyst, you will interpret complex data sets, provide actionable insights, and support data-driven decision-making.",
     responsibilities: [
@@ -960,6 +959,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "dataScience",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "UX Designer",
@@ -967,8 +967,7 @@ export const jobListings = [
     location: "London",
     level: "Intermediate Level",
     ctc: "CTC: 102k",
-    apply_label: "Apply Now",
-    posted: "Posted 3 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -986,6 +985,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "designing",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Security Analyst",
@@ -993,8 +993,7 @@ export const jobListings = [
     location: "New York",
     level: "Senior Level",
     ctc: "CTC: 85k",
-    apply_label: "Apply Now",
-    posted: "Posted 4 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -1012,6 +1011,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "dataScience",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Backend Developer",
@@ -1019,8 +1019,7 @@ export const jobListings = [
     location: "Hyderabad",
     level: "Intermediate Level",
     ctc: "CTC: 85k",
-    apply_label: "Apply Now",
-    posted: "Posted 0 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Backend Developer, you'll develop scalable server-side applications, manage APIs, and work closely with frontend and DevOps teams.",
     responsibilities: [
@@ -1038,6 +1037,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "UX Designer",
@@ -1045,8 +1045,7 @@ export const jobListings = [
     location: "California",
     level: "Entry Level",
     ctc: "CTC: 120k",
-    apply_label: "Apply Now",
-    posted: "Posted 0 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -1064,6 +1063,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "designing",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "UX Designer",
@@ -1071,8 +1071,7 @@ export const jobListings = [
     location: "Mumbai",
     level: "Senior Level",
     ctc: "CTC: 75k",
-    apply_label: "Apply Now",
-    posted: "Posted 6 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -1090,6 +1089,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "designing",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "UX Designer",
@@ -1097,8 +1097,7 @@ export const jobListings = [
     location: "Chennai",
     level: "Intermediate Level",
     ctc: "CTC: 95k",
-    apply_label: "Apply Now",
-    posted: "Posted 10 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -1116,6 +1115,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "designing",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Security Analyst",
@@ -1123,8 +1123,7 @@ export const jobListings = [
     location: "Mumbai",
     level: "Intermediate Level",
     ctc: "CTC: 102k",
-    apply_label: "Apply Now",
-    posted: "Posted 1 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -1142,6 +1141,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "dataScience",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Software Tester",
@@ -1149,8 +1149,7 @@ export const jobListings = [
     location: "Austin",
     level: "Intermediate Level",
     ctc: "CTC: 75k",
-    apply_label: "Apply Now",
-    posted: "Posted 11 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -1168,6 +1167,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "UX Designer",
@@ -1175,8 +1175,7 @@ export const jobListings = [
     location: "Bangalore",
     level: "Intermediate Level",
     ctc: "CTC: 130k",
-    apply_label: "Apply Now",
-    posted: "Posted 5 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -1194,6 +1193,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "designing",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "DevOps Engineer",
@@ -1201,8 +1201,7 @@ export const jobListings = [
     location: "Chennai",
     level: "Senior Level",
     ctc: "CTC: 95k",
-    apply_label: "Apply Now",
-    posted: "Posted 6 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -1220,6 +1219,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "UX Designer",
@@ -1227,8 +1227,7 @@ export const jobListings = [
     location: "Austin",
     level: "Entry Level",
     ctc: "CTC: 120k",
-    apply_label: "Apply Now",
-    posted: "Posted 9 months ago",
+    applyLabel: "Apply Now",
     description:
       "Be a part of our growing team and help build innovative solutions that make a difference.",
     responsibilities: [
@@ -1246,6 +1245,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "designing",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "AI/ML Engineer",
@@ -1253,8 +1253,7 @@ export const jobListings = [
     location: "Chennai",
     level: "Intermediate Level",
     ctc: "CTC: 75k",
-    apply_label: "Apply Now",
-    posted: "Posted 12 months ago",
+    applyLabel: "Apply Now",
     description:
       "As an AI/ML Engineer, you'll innovate on intelligent systems, build learning algorithms, and apply ML models to real-world challenges.",
     responsibilities: [
@@ -1272,6 +1271,7 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
   {
     title: "Frontend Developer",
@@ -1279,8 +1279,7 @@ export const jobListings = [
     location: "Bangalore",
     level: "Intermediate Level",
     ctc: "CTC: 130k",
-    apply_label: "Apply Now",
-    posted: "Posted 12 months ago",
+    applyLabel: "Apply Now",
     description:
       "As a Frontend Developer, you will design interactive interfaces, optimize performance, and bring creative ideas to life using modern web technologies.",
     responsibilities: [
@@ -1298,5 +1297,6 @@ export const jobListings = [
       "Excellent communication and problem-solving skills.",
     ],
     category: "programming",
+    postedBy: "680e5a11050b7a44bbc47557",
   },
 ];

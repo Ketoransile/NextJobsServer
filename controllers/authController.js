@@ -48,24 +48,43 @@ export const createUser = async (req, res) => {
     // 3. Connect to MongoDB
     await connectDB();
     console.log("✅ Connected to MongoDB");
-
     // 4. Process Event Type
     switch (type) {
       case "user.created": {
         console.log("🆕 Creating new user...");
-        const userData = {
+        const emailPrefix =
+          data?.email_addresses?.[0]?.email_address?.split("@")[0] || "user";
+        // const userData = {
+        //   clerkUserId: data.id,
+        //   username:
+        //     data.first_name ||
+        //     data.username ||
+        //     data.email_addresses[0].email_address.split("@")[0],
+        //   email: data.email_addresses[0].email_address,
+        //   profilePicture: data.image_url,
+        // };
+        const userData = new User({
           clerkUserId: data.id,
+          username: data.first_name?.trim() || emailPrefix,
           email: data.email_addresses[0].email_address,
           profilePicture: data.image_url,
-        };
-        await User.create(userData);
+        });
+        console.log("Raw data from webhook:", JSON.stringify(data, null, 2));
+        console.log(
+          "Attempting to set username to:",
+          data.first_name?.trim() || emailPrefix
+        );
+        await userData.save();
         console.log("✅ User created in DB!");
         res.status(200).json({ message: "User created" });
         break;
       }
       case "user.updated": {
         console.log("✏️ Updating user...");
+        const emailPrefix =
+          data?.email_addresses?.[0]?.email_address?.split("@")[0] || "user";
         const userData = {
+          username: data.first_name?.trim() || emailPrefix,
           email: data.email_addresses[0].email_address,
           profilePicture: data.image_url,
         };

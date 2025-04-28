@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
-
+import { Company } from "./Company.js";
+import { User } from "./User.js";
 const jobSchema = new mongoose.Schema(
   {
     title: {
@@ -12,11 +13,9 @@ const jobSchema = new mongoose.Schema(
     },
     responsibilities: {
       type: [String],
-      required: true,
     },
     skills: {
       type: [String],
-      required: true,
     },
     location: {
       type: String,
@@ -43,14 +42,14 @@ const jobSchema = new mongoose.Schema(
       ],
       required: true,
     },
-    company: {
+    companyId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Company",
       required: true,
     },
     postedBy: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User", // the recruiter who posted
+      ref: "User",
       required: true,
     },
     applyLabel: {
