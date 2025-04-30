@@ -164,32 +164,49 @@ export const createUser = async (req, res) => {
           data?.email_addresses?.[0]?.email_address?.split("@")[0] || "user";
 
         // Handle recruiter role (select existing company)
-        let companyDoc = null;
+        // let companyDoc = null;
 
+        // if (data.public_metadata?.role === "recruiter") {
+        //   // Find the company from the public_metadata
+        //   const companyName = data.public_metadata?.company;
+
+        //   if (companyName) {
+        //     // Fetch the company from the database using the provided company name
+        //     companyDoc = await Company.findOne({ name: companyName });
+
+        //     if (!companyDoc) {
+        //       console.log(`⚠️ Company with name "${companyName}" not found.`);
+        //     }
+        //   }
+        // }
+
+        // // Create the user (and link to company if recruiter)
+        // const userData = new User({
+        //   clerkUserId: data.id,
+        //   username: data.first_name?.trim() || emailPrefix,
+        //   email: data.email_addresses[0].email_address,
+        //   profilePicture: data.image_url,
+        //   role: data.public_metadata?.role || "user", // Default to "user"
+        //   company: companyDoc?._id, // If recruiter, associate the company
+        // });
+        let companyId;
         if (data.public_metadata?.role === "recruiter") {
-          // Find the company from the public_metadata
-          const companyName = data.public_metadata?.company;
-
-          if (companyName) {
-            // Fetch the company from the database using the provided company name
-            companyDoc = await Company.findOne({ name: companyName });
-
-            if (!companyDoc) {
-              console.log(`⚠️ Company with name "${companyName}" not found.`);
-            }
+          companyId = data.public_metadata.company; // Get company ID from metadata
+          if (!companyId) {
+            console.warn(
+              "⚠️  Recruiter role but no company ID found in metadata."
+            );
           }
         }
 
-        // Create the user (and link to company if recruiter)
         const userData = new User({
           clerkUserId: data.id,
           username: data.first_name?.trim() || emailPrefix,
           email: data.email_addresses[0].email_address,
           profilePicture: data.image_url,
-          role: data.public_metadata?.role || "user", // Default to "user"
-          company: companyDoc?._id, // If recruiter, associate the company
+          role: data.public_metadata?.role || "user",
+          company: companyId, // Use the company ID
         });
-
         console.log("Raw data from webhook:", JSON.stringify(data, null, 2));
         console.log(
           "Attempting to set username to:",
