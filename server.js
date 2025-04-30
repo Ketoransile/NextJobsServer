@@ -34,9 +34,9 @@ app.use("/api/v1/companies", companyRoutes);
 
 console.log("process.env.PORT", process.env.PORT);
 console.log("process.env.MONGODB_URL", process.env.MONGODB_URL);
-// app.get("/", (req, res) => {
-//   res.send("Hello world 🥳");
-// });
+app.get("/", (req, res) => {
+  res.send("Hello world 🥳");
+});
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
