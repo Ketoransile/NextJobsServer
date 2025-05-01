@@ -1,4 +1,5 @@
 import connectDB from "../connectDB.js";
+import { Company } from "../models/Company.js";
 import { Job } from "../models/Job.js";
 export const getAllJobs = async (req, res) => {
   try {
@@ -6,6 +7,8 @@ export const getAllJobs = async (req, res) => {
     const limit = parseInt(req.query.limit) || 0;
     const search = req.query.search || "";
     const location = req.query.location || "";
+    const company = req.query.company || "";
+    const category = req.query.category || "";
 
     await connectDB();
     const query = {};
@@ -19,6 +22,18 @@ export const getAllJobs = async (req, res) => {
     }
     if (location) {
       query.location = { $regex: location, $options: "i" };
+    }
+    let companyIds = null;
+
+    if (company) {
+      const compnaies = await Company.find({
+        name: { $regex: company, $options: "i" },
+      }).select("_id");
+      companyIds = compnaies.map((c) => c._id);
+      query.companyId = { $in: companyIds };
+    }
+    if (category) {
+      query.category = { $regex: category, $options: "i" };
     }
     console.log("Query object is", query);
     const jobs = await Job.find(query)
