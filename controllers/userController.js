@@ -15,16 +15,21 @@ export const getCurrentUser = async (req, res) => {
     console.log("USer id from usercontroller is", userId);
     const user = await User.findOne({ clerkUserId: userId });
     if (!user) {
-      return res.status(404).json({ message: "User was not found" });
+      return res
+        .status(404)
+        .json({ message: "User was not found", data: null });
     }
     // const user = await clerkClient.users.getUser(userId);
 
-    return res.json({ user });
+    return res.json({ message: "User successfully fetched", data: user });
   } catch (error) {
     console.error(error);
     return res
       .status(500)
-      .json({ message: "Internal Error while fetching current user" });
+      .json({
+        message: "Internal Error while fetching current user",
+        data: null,
+      });
   }
 };
 
