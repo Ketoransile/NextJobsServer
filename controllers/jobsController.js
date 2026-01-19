@@ -86,6 +86,7 @@ export const getAllJobs = async (req, res) => {
       .limit(limit);
     // if (!jobs || jobs === null || jobs.length === 0) {
     // The same as above but concise way
+    // if (!jobs?.length) {
     if (!jobs?.length) {
       return res.status(404).json({ message: "No jobs  found!!" });
     }

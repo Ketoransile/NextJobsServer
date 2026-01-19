@@ -8,8 +8,14 @@ import jobRoutes from "./routes/jobsRoute.js";
 import userRoutes from "./routes/userRoute.js";
 import applicationRoutes from "./routes/applicationRoute.js";
 import companyRoutes from "./routes/companyRoute.js";
+import connectDB from "./connectDB.js";
+
+connectDB();
 const allowedOrigins = [
   "http://localhost:3000",
+  "http://localhost:3001",
+  "http://127.0.0.1:3000",
+  "http://127.0.0.1:3001",
   "https://job-portal-omega-flame.vercel.app",
 ];
 const app = express();

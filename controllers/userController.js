@@ -12,14 +12,32 @@ export const getCurrentUser = async (req, res) => {
     await connectDB();
 
     const userId = req.auth.userId;
-    console.log("USer id from usercontroller is", userId);
-    const user = await User.findOne({ clerkUserId: userId });
+    console.log("User id from usercontroller is", userId);
+
+    let user = await User.findOne({ clerkUserId: userId });
+
+    // Lazy sync: If user authenticates but isn't in DB (e.g. dev environment without webhooks)
     if (!user) {
-      return res
-        .status(404)
-        .json({ message: "User was not found", data: null });
+      console.log("User not found in DB, attempting lazy sync from Clerk...");
+      try {
+        const clerkUser = await clerkClient.users.getUser(userId);
+        const email = clerkUser.emailAddresses[0]?.emailAddress;
+        if (!email) throw new Error("No email found for user");
+
+        user = await User.create({
+          clerkUserId: userId,
+          username: clerkUser.firstName || email.split("@")[0],
+          email: email,
+          profilePicture: clerkUser.imageUrl,
+          role: clerkUser.publicMetadata?.role || "user",
+        });
+        console.log("Lazy sync successful: User created in DB.");
+      } catch (clerkError) {
+        console.error("Failed to fetch/create user from Clerk:", clerkError);
+        // Fallback: Return 404 if we really can't create them
+        return res.status(404).json({ message: "User not found in DB and sync failed" });
+      }
     }
-    // const user = await clerkClient.users.getUser(userId);
 
     return res.json({ message: "User successfully fetched", data: user });
   } catch (error) {

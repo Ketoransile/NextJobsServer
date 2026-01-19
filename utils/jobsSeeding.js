@@ -13,6 +13,8 @@ dotenv.config({ path: path.resolve(__dirname, "../.env") });
 async function addJobs() {
   try {
     await connectDB();
+    await Job.deleteMany({});
+    console.log("All Previous Jobs Deleted");
     await Job.insertMany(jobListings);
     console.log("JObs are successfully inserted");
     process.exit();
