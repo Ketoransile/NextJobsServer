@@ -9,6 +9,7 @@ dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 import mongoose from "mongoose";
 import connectDB from "../connectDB.js";
+import { Company } from "../models/Company.js";
 
 dotenv.config();
 const companies = [
